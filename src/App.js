@@ -15,7 +15,7 @@ function App() {
   React.useEffect(() => {
     getPhoto();
   }, []);
-
+  console.log(dogPhoto)
   const [ message, setMessage] = React.useState("");
   
 
@@ -23,9 +23,9 @@ function App() {
     <div className="App">
       <h1>Random Dog Photos! </h1>
       
-      
-
-      <button onClick={getPhoto}>More dogs</button>
+      <img src={dogPhoto} alt="Doggo" />
+      <br />
+      <p><button onClick={getPhoto}>More dogs</button></p>
       <button onClick={() => {
         setMessage("You are horrible")
       }} >
