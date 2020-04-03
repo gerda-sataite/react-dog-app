@@ -1,5 +1,6 @@
 import React from 'react';
 import { Grommet } from 'grommet';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import NoDogs from './components/NoDogs';
 import Dogs from './components/Dogs';
 import Quotes from './components/Quotes';
@@ -18,6 +19,7 @@ function App() {
           <Dogs />
 
           <NoDogs />
+          
           <br />
 
         </div>

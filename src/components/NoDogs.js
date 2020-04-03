@@ -6,7 +6,7 @@ function NoDogs() {
 
     const handleClick = () => {
         if (message === '') {
-            setMessage('You are horrible! Would you like to see a cat?')
+            setMessage('You are horrible!')
         
         } else {
             setMessage('')
@@ -22,6 +22,7 @@ function NoDogs() {
                 />
             </p>
             <p>{message}</p>
+            
         </div>
     )
 }

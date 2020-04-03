@@ -1,7 +1,6 @@
 import React from 'react';
 import axios from 'axios';
 import { Button } from 'grommet';
-import { Card } from 'react-bootstrap';
 
 function Quotes() {
   const [quote, setQuote] = React.useState();
