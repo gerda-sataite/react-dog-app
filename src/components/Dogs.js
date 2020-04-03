@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import { Button } from 'grommet';
+import { Button, Box, Image } from 'grommet';
 
 function Dogs() {
     const [dogPhoto, setDogPhoto] = React.useState();
@@ -18,7 +18,15 @@ function Dogs() {
     console.log(dogPhoto)
 
     return (
-        <div> <img src={dogPhoto} alt="Doggo" class="ui medium rounded image" />
+        <div> <p>
+            <Box height="medium" width="large" alignSelf="center">
+                <Image
+                    alignSelf="center"
+                    fit="contain"
+                    src={dogPhoto}
+                />
+            </Box>
+            </p>
             <p>
                 <Button
                     label="More dogs"

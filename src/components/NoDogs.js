@@ -9,17 +9,19 @@ function NoDogs() {
     }
     return (
         <div>
+            <p>
                 <Button
                     label="I don't like dogs"
                     onClick={() => {
-                    setMessage("You are horrible")}
+                        setMessage("You are horrible")
+                    }
                     }
                 />
-               
+            </p>
             <p>{message}</p>
         </div>
     )
 }
-                    
+
 
 export default NoDogs

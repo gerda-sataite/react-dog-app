@@ -8,23 +8,23 @@ import './App.css';
 function App() {
 
 
-
   return (
     <column>
-    <Grommet plain>
-      <div className="App">
-        <h1>Random Dog Photos! </h1>
-        <Quotes />
+      <Grommet plain>
+        <div className="App">
+          <h1>Random Dog Photos! </h1>
+          <Quotes />
 
-        <Dogs />
+          <Dogs />
 
-        <NoDogs />
-        <br />
-        
-      </div>
+          <NoDogs />
+          <br />
+
+        </div>
       </Grommet>
-    </column>
 
+
+    </column>
   );
 }
 
