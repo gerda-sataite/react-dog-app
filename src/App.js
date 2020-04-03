@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import NoDogs from './components/NoDogs';
 import './App.css';
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
     getPhoto();
   }, []);
   console.log(dogPhoto)
-  const [ message, setMessage] = React.useState("");
+  
   
 
   return (
@@ -26,11 +27,7 @@ function App() {
       <img src={dogPhoto} alt="Doggo" />
       <br />
       <p><button onClick={getPhoto}>More dogs</button></p>
-      <button onClick={() => {
-        setMessage("You are horrible")
-      }} >
-        I don't like dogs</button>
-        <p>{message}</p>
+      <NoDogs />
     </div>
   );
 }
