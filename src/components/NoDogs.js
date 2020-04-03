@@ -1,17 +1,25 @@
 import React from 'react';
+import { Button } from 'grommet';
 
 function NoDogs() {
     const [message, setMessage] = React.useState("");
 
+    const toggleNoDogs = () => {
+        setMessage(!message);
+    }
     return (
         <div>
-            <button onClick={() => {
-                setMessage("You are horrible")
-            }} >
-                I don't like dogs</button>
+                <Button
+                    label="I don't like dogs"
+                    onClick={() => {
+                    setMessage("You are horrible")}
+                    }
+                />
+               
             <p>{message}</p>
         </div>
     )
 }
+                    
 
 export default NoDogs

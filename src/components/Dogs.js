@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { Button } from 'grommet';
 
 function Dogs() {
     const [dogPhoto, setDogPhoto] = React.useState();
@@ -17,8 +18,13 @@ function Dogs() {
     console.log(dogPhoto)
 
     return (
-        <div> <img src={dogPhoto} alt="Doggo" />
-            <p><button onClick={getPhoto}>More dogs</button></p>
+        <div> <img src={dogPhoto} alt="Doggo" class="ui medium rounded image" />
+            <p>
+                <Button
+                    label="More dogs"
+                    onClick={getPhoto}
+                />
+            </p>
         </div>
     )
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { Button } from 'grommet';
 
 function Quotes() {
   const [quote, setQuote] = React.useState();
@@ -21,12 +22,17 @@ function Quotes() {
       {quote && (
         <>
           <p>{quote.quoteText}</p>
-          <p>{quote.quoteTAuthor}</p>
+          <p>{quote.quoteAuthor}</p>
         </>
-
       )}
+
       <p>{quote}</p>
-      <p><button onClick={getQuote}>Inspire Me!</button></p>
+      <p>
+        <Button
+          label="Inspire Me!"
+          onClick={getQuote}
+        />
+      </p>
     </div>
   )
 }
