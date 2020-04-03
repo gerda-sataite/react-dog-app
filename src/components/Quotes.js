@@ -20,17 +20,13 @@ function Quotes() {
 
   return (
     <div>
-      <Card>
-        <Card.Body>
-          {quote && (
-            <>
-              <p>{quote.quoteText}</p>
-            </>
-          )}
+      {quote && (
+        <>
+          <p>{quote.quoteText}</p>
+        </>
+      )}
 
-          <p>{quote}</p>
-        </Card.Body>
-      </Card>
+      <p>{quote}</p>
       <p>
         <Button
           label="Inspire Me!"
