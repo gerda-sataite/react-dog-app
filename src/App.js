@@ -6,18 +6,19 @@ import Quotes from './components/Quotes';
 import './App.css';
 
 function App() {
-  
-  
-  
+
+
 
   return (
-    <div className="App">
-      <h1>Random Dog Photos! </h1>
-      <Quotes />
-      <Dogs />
-      <br />
-      <NoDogs />
-    </div>
+    <column>
+      <div className="App">
+        <h1>Random Dog Photos! </h1>
+        <Quotes />
+        <Dogs />
+        <br />
+        <NoDogs />
+      </div>
+    </column>
   );
 }
 

@@ -1,14 +1,14 @@
 import React from 'react';
 
 function NoDogs() {
-    const [ message, setMessage] = React.useState("");
-    
+    const [message, setMessage] = React.useState("");
+
     return (
         <div>
             <button onClick={() => {
-            setMessage("You are horrible")
-          }} >
-            I don't like dogs</button>
+                setMessage("You are horrible")
+            }} >
+                I don't like dogs</button>
             <p>{message}</p>
         </div>
     )
