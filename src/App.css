@@ -11,6 +11,7 @@ div {
   justify-content: center;
   background-color: white;
   margin: auto;
+  font-family: Verdana, Tahoma, sans-serif;
 }
 
 @keyframes App-logo-spin {
