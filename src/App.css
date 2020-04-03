@@ -1,15 +1,11 @@
 .App {
   text-align: center;
-  justify-content: center;
-}
-.Box {
-  justify-content: center;
 }
 body {
   background-color: #FFF2AC;
 }
 div {
-  width: 600px;
+  width: fit-content;
   height: fill;
   column-count: 1;
   justify-content: center;
