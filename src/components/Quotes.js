@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { Button } from 'grommet';
+import { Card } from 'react-bootstrap';
 
 function Quotes() {
   const [quote, setQuote] = React.useState();
@@ -19,19 +20,23 @@ function Quotes() {
 
   return (
     <div>
-      {quote && (
-        <>
-          <p>{quote.quoteText}</p>
-          <p>{quote.quoteAuthor}</p>
-        </>
-      )}
+      <Card>
+        <Card.Body>
+          {quote && (
+            <>
+              <p>{quote.quoteText}</p>
+            </>
+          )}
 
-      <p>{quote}</p>
+          <p>{quote}</p>
+        </Card.Body>
+      </Card>
       <p>
         <Button
           label="Inspire Me!"
           onClick={getQuote}
         />
+
       </p>
     </div>
   )
