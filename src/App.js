@@ -8,25 +8,18 @@ import './App.css';
 import SearchDogs from './components/SearchDogs';
 
 function App() {
-
-
   return (
     <column>
       <Grommet plain>
         <div className="App">
           <h1>Random Dog Photos! </h1>
           <Quotes />
-
           <Dogs />
-
           <NoDogs />
-
           <br />
           <SearchDogs />
         </div>
       </Grommet>
-
-
     </column>
   );
 }
