@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { Button } from 'grommet';
 
+
 function Quotes() {
   const [quote, setQuote] = React.useState();
   const getQuote = () => {

@@ -18,7 +18,8 @@ function Dogs() {
     console.log(dogPhoto)
 
     return (
-        <div> <p>
+        <div> 
+            <p>
             <Box height="medium" width="large" alignSelf="center">
                 <Image
                     alignSelf="center"

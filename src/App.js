@@ -5,6 +5,7 @@ import NoDogs from './components/NoDogs';
 import Dogs from './components/Dogs';
 import Quotes from './components/Quotes';
 import './App.css';
+import SearchDogs from './components/SearchDogs';
 
 function App() {
 
@@ -19,9 +20,9 @@ function App() {
           <Dogs />
 
           <NoDogs />
-          
-          <br />
 
+          <br />
+          <SearchDogs />
         </div>
       </Grommet>
 
