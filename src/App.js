@@ -1,37 +1,26 @@
 import React from 'react';
-import axios from 'axios';
+import { Grommet } from 'grommet';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Dogs from './components/Dogs';
+import NoDogs from './components/NoDogs';
+import Quotes from './components/Quotes';
+import SearchDogs from './components/SearchDogs';
 import './App.css';
 
 function App() {
-  const [dogPhoto, setDogPhoto] = React.useState();
-  const getPhoto = () => {
-    const request = axios.get(`https://dog.ceo/api/breeds/image/random`)
-
-  request.then(response => {
-      const randomPhoto = response.data.message;
-      setDogPhoto(randomPhoto);
-  })
-}
-  React.useEffect(() => {
-    getPhoto();
-  }, []);
-
-  const [ message, setMessage] = React.useState("");
-  
-
   return (
-    <div className="App">
-      <h1>Random Dog Photos! </h1>
-      
-      
-
-      <button onClick={getPhoto}>More dogs</button>
-      <button onClick={() => {
-        setMessage("You are horrible")
-      }} >
-        I don't like dogs</button>
-        <p>{message}</p>
-    </div>
+    <column>
+      <Grommet plain>
+        <div className="App">
+          <h1>Random Dog Photos! </h1>
+          <Quotes />
+          <Dogs />
+          <NoDogs />
+          <br />
+          <SearchDogs />
+        </div>
+      </Grommet>
+    </column>
   );
 }
 
