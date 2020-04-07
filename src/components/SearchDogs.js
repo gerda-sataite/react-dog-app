@@ -3,27 +3,38 @@ import axios from 'axios';
 import { Button } from 'grommet';
 
 function SearchDogs() {
-    const [dogBreed, setDogBreed] = React.useState("")
+    const [typedBreed, setTypedBreed] = React.useState("")
+
     const getBreed = () => {
-        const request = axios.get(`https://dog.ceo/api/breeds/list/all`)
+        const request = axios.get(`https://dog.ceo/api/breed/${typedBreed}/images`)
 
         request.then(response => {
-            const randomBreed = response.data.message;
-            setDogBreed(randomBreed);
+            console.log(response.data)
+            // const randomBreed = response.data.message;
         })
     }
-    React.useEffect(() => {
-        getBreed();
+
+     React.useEffect(() => {
+       getBreed();
     }, []);
-    console.log(dogBreed)
+    console.log(typedBreed)
 
     return (
         <div>
-            <input name='Dog breed'></input>
-            <Button 
+            <p><input 
+            value={typedBreed} 
+            onChange={(event) => setTypedBreed(event.target.value)}
+            ></input>
+            </p>
+            <p><Button 
             label="Search"
-            onClick={getBreed} 
+            onClick={() => {
+                getBreed()
+                setTypedBreed('')
+            }} 
             />
+            </p>
+            
         </div>
     )
 }
