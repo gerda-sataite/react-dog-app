@@ -1,11 +1,11 @@
 import React from 'react';
 import { Grommet } from 'grommet';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NoDogs from './components/NoDogs';
 import Dogs from './components/Dogs';
+import NoDogs from './components/NoDogs';
 import Quotes from './components/Quotes';
-import './App.css';
 import SearchDogs from './components/SearchDogs';
+import './App.css';
 
 function App() {
   return (
