@@ -28,7 +28,6 @@ function App() {
           <p><Link to="/no-dogs">I don't like dogs</Link></p>
         </nav>
 
-
         <Router>
           <Home path="/" />
           <Quotes path="/inspiration" />

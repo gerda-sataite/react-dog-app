@@ -21,6 +21,10 @@ function NoDogs() {
                 />
             </p>
             <p>{message}</p>
+
+            <img 
+            alt="Cats then"
+            src="https://66.media.tumblr.com/9365cfe6de0419afa5df89e019c73b5e/tumblr_mrdy178jeZ1rlfsw2o1_250.gif"></img>
             
         </div>
     )
