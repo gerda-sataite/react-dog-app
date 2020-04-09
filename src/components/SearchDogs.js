@@ -17,8 +17,23 @@ function SearchDogs() {
     //     getBreed();
     // }, []);
     console.log(typedBreed)
-
     console.log('photoUrls:', photoUrls)
+    
+
+    const putInAnImage = (url) => {
+        return <img alt="something" src={url}></img>
+
+        // return <p><Box height="medium" width="large" alignSelf="center">
+        //     <Image
+        //         alignSelf="center"
+        //         fit="contain"
+        //         src={photoUrls[0]}
+        //     />
+        // </Box>
+        // </p>
+    }
+
+    const listPhotos = photoUrls.map(putInAnImage)
 
     if (!photoUrls.length) {
         return (
@@ -51,26 +66,17 @@ function SearchDogs() {
                     onClick={() => {
                         getBreed()
                         setTypedBreed('')
-                        setPhotoUrls([])
                     }}
                 />
                 </p>
-                
-                <Box height="medium" width="large" alignSelf="center">
-                <Image
-                    alignSelf="center"
-                    fit="contain"
-                    src={photoUrls[0]}
-                />
-            </Box>
-                
+                <p>
+                    {listPhotos}
+                </p>
+
+
             </div>
         )
     }
-
-
-
-
 }
 
 export default SearchDogs
