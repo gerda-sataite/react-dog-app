@@ -21,16 +21,16 @@ function SearchDogs() {
     
 
     const putInAnImage = (url) => {
-        return <img alt="something" src={url}></img>
+        // return <img alt="something" src={url}></img>
 
-        // return <p><Box height="medium" width="large" alignSelf="center">
-        //     <Image
-        //         alignSelf="center"
-        //         fit="contain"
-        //         src={photoUrls[0]}
-        //     />
-        // </Box>
-        // </p>
+        return <p><Box height="medium" width="large" alignSelf="center">
+            <Image
+                alignSelf="center"
+                fit="contain"
+                src={url}
+            />
+        </Box>
+        </p>
     }
 
     const listPhotos = photoUrls.map(putInAnImage)
