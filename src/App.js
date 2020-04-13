@@ -2,12 +2,11 @@ import React from 'react';
 import { Grommet, } from 'grommet';
 import { Router, Link } from "@reach/router";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NoDogs from './components/NoDogs';
 import Dogs from './components/Dogs';
+import NoDogs from './components/NoDogs';
 import Quotes from './components/Quotes';
 import SearchDogs from './components/SearchDogs';
 import './App.css';
-
 
 function App() {
   let Home = () => <div></div>
@@ -39,9 +38,6 @@ function App() {
         
       </div>
     </Grommet>
-
-
-
   );
 }
 
