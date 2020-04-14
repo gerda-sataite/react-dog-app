@@ -18,7 +18,7 @@ function SearchDogs() {
     // }, []);
     console.log(typedBreed)
     console.log('photoUrls:', photoUrls)
-    
+
 
     const putInAnImage = (url) => {
         // return <img alt="something" src={url}></img>
@@ -72,8 +72,6 @@ function SearchDogs() {
                 <p>
                     {listPhotos}
                 </p>
-
-
             </div>
         )
     }

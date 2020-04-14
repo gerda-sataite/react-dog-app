@@ -1,28 +1,27 @@
 .App {
-  text-align: center;
-  align-items: center;
+  
 }
 .Box {
   justify-content: center;  
 }
 body {
-  background-color: #FFF2AC;
   text-align: center;
+  background:  #FFE5BB;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(45.34deg, #119DA4 5.66%, #9BC7B2 31.53%, #FFE5BB 50.01%, #FFBE99 72.18%, #FF886A 94.35%);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(45.34deg, #119DA4 5.66%, #9BC7B2 31.53%, #FFE5BB 50.01%, #FFBE99 72.18%, #FF886A 94.35%);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.nav {
+  display: flex;
+  flex-wrap: nowrap;
 }
 div {
   width: 800px;
   height: stretch;
   column-count: 1;
-  justify-content: center;
   background-color: white;
   margin: auto;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

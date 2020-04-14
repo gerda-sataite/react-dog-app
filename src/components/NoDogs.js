@@ -6,7 +6,7 @@ function NoDogs() {
 
     const handleClick = () => {
         if (message === '') {
-            setMessage('In my opinion, dogs are cuter...')
+            setMessage('Okay, click the gif then...')
         } else {
             setMessage('')
         }
@@ -16,12 +16,15 @@ function NoDogs() {
         <div>
             <p>
                 <Button
-                    label="For cats, click the gif"
+                    label="Would you like to see cats?"
                     onClick={handleClick}
                 />
             </p>
             <p>{message}</p>
-            <a href="https://www.pexels.com/search/cat/">
+            <a 
+            href="https://www.pexels.com/search/cat/"
+            rel="noopener noreferrer"
+            target="_blank">
                 <img
                     alt="Cats then"
                     src="https://66.media.tumblr.com/9365cfe6de0419afa5df89e019c73b5e/tumblr_mrdy178jeZ1rlfsw2o1_250.gif"></img>
