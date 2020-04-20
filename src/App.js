@@ -3,21 +3,13 @@ import { Grommet, } from 'grommet';
 import { Router } from "@reach/router";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Dogs from './components/Dogs';
-<<<<<<< HEAD
 import NavBar from './components/NavBar';
-=======
->>>>>>> add37775b880b53598c6882182adc7eb1e0307b9
 import NoDogs from './components/NoDogs';
 import Quotes from './components/Quotes';
 import SearchDogs from './components/SearchDogs';
 import Home from './components/About';
 import './App.css';
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> add37775b880b53598c6882182adc7eb1e0307b9
 function App() {
   const NotFound = () => <p>Sorry, nothing here</p>
 
@@ -27,9 +19,9 @@ function App() {
 
       <div>
         <h1>Random Dog Photos! </h1>
-        <p>A place for good vibes</p>
+        <p>A place to cure boredom</p>
       </div>
-<<<<<<< HEAD
+
       <NavBar />
 
       <br />
@@ -44,11 +36,8 @@ function App() {
 
 
     </Grommet>
-  )
-=======
-    </Grommet>
   );
->>>>>>> add37775b880b53598c6882182adc7eb1e0307b9
+
 }
 
 export default App
